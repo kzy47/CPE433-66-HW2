@@ -303,11 +303,11 @@ namespace DNWS
                     {
                         Thread thread = new Thread(new ParameterizedThreadStart(ThreadProc));
                         thread.Start(new TaskInfo(hp));
-                        
+
                     } else {
                     hp.Process();
                     }
-                  
+                } 
                 catch (Exception ex)
                 {
                     _parent.Log("Server starting error: " + ex.Message + "\n" + ex.StackTrace);
